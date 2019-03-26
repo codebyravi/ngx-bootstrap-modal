@@ -52,7 +52,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs/demo",
+            "outputPath": "docs",
             "index": "projects/ngx-bootstrap-modal-demo/src/index.html",
             "main": "projects/ngx-bootstrap-modal-demo/src/main.ts",
             "polyfills": "projects/ngx-bootstrap-modal-demo/src/polyfills.ts",

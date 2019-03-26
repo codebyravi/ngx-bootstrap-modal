@@ -120,19 +120,48 @@ export class MyComponent {
 
 ## API
 
-## `NgxBootstrapModalService`
-
-- `show(templateRef: TemplateRef<any>): INgxBootstrapModalInstance`
-
-`INgxBootstrapModalInstance`
-
 ```ts
+class NgxBootstrapModalService {
+  show(templateRef: TemplateRef<any>): INgxBootstrapModalInstance
+}
+
 interface INgxBootstrapModalInstance {
+  // The modal element, useful for focusing fields within it.
   modalEl: HTMLElement;
+  // Resolves when the modal has been completely shown.
   shown: Promise<void>;
+  // Resolves when the modal has been completely hidden.
   hidden: Promise<void>;
+  // An observable of the modal's native Bootstrap events.
   events: Observable<Event>;
+  // Hide the modal.
   hide: () => Promise<void>;
+  // Use this to update the modal's positioning when it's likely that the content has changed its height.
   handleUpdate: () => void;
 }
 ```
+
+## Development
+
+Contributions are welcome. This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+
+```bash
+git clone https://github.com/nowzoo/ngx-bootstrap-modal.git
+npm i
+```
+
+The library code is located in `projects/ngx-bootstrap-modal`.
+
+To run tests:
+  - `ng test ngx-bootstrap-modal`
+  - or use the `wallaby.js` file at `projects/ngx-bootstrap-modal/wallaby.js`
+
+Build the library with `ng build ngx-bootstrap-modal`.
+
+The demo project is located at `projects/ngx-bootstrap-modal-demo`. Serve the demo with `ng serve ngx-bootstrap-modal-demo --open`.
+
+Note that you have to build the library for any changes to show up in the demo app. This does not happen automatically.  
+
+## License
+
+[MIT](https://github.com/nowzoo/ngx-bootstrap-modal/blob/master/LICENSE)
