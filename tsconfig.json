@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-bootstrap-modal": [
+        "dist/ngx-bootstrap-modal"
+      ],
+      "ngx-bootstrap-modal/*": [
+        "dist/ngx-bootstrap-modal/*"
+      ]
+    }
   }
 }
