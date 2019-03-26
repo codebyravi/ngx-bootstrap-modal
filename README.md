@@ -120,6 +120,19 @@ export class MyComponent {
 
 ## API
 
-`NgxBootstrapModalService`
+## `NgxBootstrapModalService`
 
 - `show(templateRef: TemplateRef<any>): INgxBootstrapModalInstance`
+
+`INgxBootstrapModalInstance`
+
+```ts
+interface INgxBootstrapModalInstance {
+  modalEl: HTMLElement;
+  shown: Promise<void>;
+  hidden: Promise<void>;
+  events: Observable<Event>;
+  hide: () => Promise<void>;
+  handleUpdate: () => void;
+}
+```
