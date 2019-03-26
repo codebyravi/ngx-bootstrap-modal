@@ -119,3 +119,7 @@ export class MyComponent {
 ```
 
 ## API
+
+`NgxBootstrapModalService`
+
+- `show(templateRef: TemplateRef<any>): INgxBootstrapModalInstance`
