@@ -4,7 +4,7 @@ A minimal library for implementing Bootstrap 4 modals in Angular. The library de
 
 ## Quick Start
 
-Import the library and its dependencies...
+Install the library and its dependencies...
 
 ```bash
 npm i -S @nowzoo/ngx-bootstrap-modal jquery popper.js bootstrap
