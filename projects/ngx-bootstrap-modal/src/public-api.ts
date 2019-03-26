@@ -3,5 +3,5 @@
  */
 
 export * from './lib/ngx-bootstrap-modal.service';
-export * from './lib/ngx-bootstrap-modal.component';
+export * from './lib/shared';
 export * from './lib/ngx-bootstrap-modal.module';

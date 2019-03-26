@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
-import { NgxBootstrapModalComponent } from './ngx-bootstrap-modal.component';
+import { NgxBootstrapModalService} from './ngx-bootstrap-modal.service';
 
 @NgModule({
-  declarations: [NgxBootstrapModalComponent],
-  imports: [
-  ],
-  exports: [NgxBootstrapModalComponent]
+  providers: [ NgxBootstrapModalService ]
 })
-export class NgxBootstrapModalModule { }
+export class NgxBootstrapModalModule {}

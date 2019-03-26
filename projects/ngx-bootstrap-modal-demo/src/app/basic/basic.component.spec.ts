@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxBootstrapModalComponent } from './ngx-bootstrap-modal.component';
+import { BasicComponent } from './basic.component';
 
-describe('NgxBootstrapModalComponent', () => {
-  let component: NgxBootstrapModalComponent;
-  let fixture: ComponentFixture<NgxBootstrapModalComponent>;
+describe('BasicComponent', () => {
+  let component: BasicComponent;
+  let fixture: ComponentFixture<BasicComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxBootstrapModalComponent ]
+      declarations: [ BasicComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxBootstrapModalComponent);
+    fixture = TestBed.createComponent(BasicComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
