@@ -2,6 +2,10 @@
 
 A minimal library for implementing Bootstrap 4 modals in Angular. The library depends on the native Bootstrap and jQuery code.
 
+[Demo App](https://nowzoo.github.io/ngx-bootstrap-modal/) |
+[Demo App Code](https://github.com/nowzoo/ngx-bootstrap-modal/tree/master/projects/ngx-bootstrap-modal-demo)
+
+
 ## Quick Start
 
 Install the library and its dependencies...
