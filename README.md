@@ -162,9 +162,16 @@ To run tests:
 
 Build the library with `ng build ngx-bootstrap-modal`.
 
-The demo project is located at `projects/ngx-bootstrap-modal-demo`. Serve the demo with `ng serve ngx-bootstrap-modal-demo --open`.
+The demo project is located at `projects/ngx-bootstrap-modal-demo`.
+
+Serve the demo:
+
+```bash 
+ng serve ngx-bootstrap-modal-demo --open
+```
 
 Note that you have to build the library for any changes to show up in the demo app. This does not happen automatically.  
+
 
 ## License
 
