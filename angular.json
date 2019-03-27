@@ -62,7 +62,6 @@
               "projects/ngx-bootstrap-modal-demo/src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/ngx-bootstrap-modal-demo/src/styles.scss"
             ],
             "scripts": [

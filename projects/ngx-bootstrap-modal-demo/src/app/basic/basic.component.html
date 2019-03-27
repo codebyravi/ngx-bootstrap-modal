@@ -1,16 +1,24 @@
-<button type="button" class="btn btn-primary" (click)="show()">Show Modal</button>
+<h5>Basic Demo</h5>
+<div class="d-md-flex">
+  <div class="mr-md-4 my-2">
+    <button type="button" class="btn btn-primary btn-lg" (click)="show()">Enter Name...</button>
+  </div>
+  <div class=" my-2">
 
-<div *ngIf="events.length > 0">
-  <small class="text-muted">Events: {{events.join(', ')}}</small>
+    <div *ngIf="events.length > 0">
+      <small class="text-muted">Events: {{events.join(', ')}}</small>
+    </div>
+
+    <div *ngIf="message">
+      <small class="text-muted">{{message}}</small>
+    </div>
+
+    <div *ngIf="name">
+      <small class="text-muted">Your Name: <strong>{{name}}</strong></small>
+    </div>
+  </div>
 </div>
 
-<div *ngIf="message">
-  <small class="text-muted">{{message}}</small>
-</div>
-
-<div *ngIf="name">
-  <small class="text-muted">Your Name: <strong>{{name}}</strong></small>
-</div>
 
 <ng-template #modal>
   <div class="modal fade" tabindex="-1" role="dialog" [attr.aria-labelledby]="id + 'modal-title'">
